@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nguyễn Quốc Nhật Phong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            width: 35%;
+            background: linear-gradient(135deg, #e8dcc8 0%, #f5ede0 100%);
+            padding: 40px 30px;
+            color: #333;
+        }
+
+        .main-content {
+            width: 65%;
+            padding: 40px 40px;
+            color: #333;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 6px solid white;
+            background-color: #ddd;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .profile-title {
+            font-size: 12px;
+            letter-spacing: 3px;
+            color: #999;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d4a574;
+            margin-top: 30px;
+        }
+
+        .sidebar .section-title {
+            text-align: left;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .contact-text {
+            word-break: break-word;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            color: #d4a574;
+            letter-spacing: 2px;
+        }
+
+        .hobby-item {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .main-subtitle {
+            font-size: 13px;
+            letter-spacing: 3px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section-title {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .content-text {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            width: 120px;
+            color: #333;
+        }
+
+        .info-value {
+            flex: 1;
+            color: #555;
+        }
+
+        .list-item {
+            font-size: 13px;
+            margin-left: 20px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .list-item:before {
+            content: "• ";
+            margin-right: 8px;
+            color: #d4a574;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <div class="profile-img" style="background-image: url('phong.jbg.png'); background-size: cover; background-position: center;"></div>
+                <div class="profile-name">NGUYỄN QUỐC<br>NHẬT PHONG</div>
+            </div>
+
+            <!-- Thông tin liên hệ -->
+            <div class="section-title">THÔNG TIN LIÊN HỆ</div>
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">0383071436</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">phongviplq05@gmail.com</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-text">www.domain.com</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">K109 Phạm Như Sương</div>
+            </div>
+
+            <!-- Kỹ năng -->
+            <div class="section-title">KỸ NĂNG</div>
+            <div class="skill-item">
+                <div class="skill-name">Tin học</div>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Graphic Design</div>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Thuyết trình</div>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Ngoại ngữ</div>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="content-text" style="margin-top: 15px; font-size: 12px;">
+                Kỹ năng cứng và kỹ năng mềm, có thể sử dụng các công cụ hoặc chứng chỉ để chứng minh năng lực.
+            </div>
+
+            <!-- Sở thích -->
+            <div class="section-title">SỞ THÍCH</div>
+            <div class="hobby-item">Đồ ăn ngon</div>
+            <div class="hobby-item">Code</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="main-title">NGUYỄN QUỐC<br>NHẬT PHONG</div>
+
+            <!-- Thông tin cá nhân -->
+            <div class="content-section">
+                <div class="content-section-title">THÔNG TIN CÁ NHÂN</div>
+                <div class="info-row">
+                    <div class="info-label">Họ và tên:</div>
+                    <div class="info-value">Nguyễn Quốc Nhật Phong</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Ngày sinh:</div>
+                    <div class="info-value">07/01/2009</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Giới tính:</div>
+                    <div class="info-value">Nam</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Số điện thoại:</div>
+                    <div class="info-value">0383071436</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Email:</div>
+                    <div class="info-value">phongviplq05@gmail.com</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Địa chỉ:</div>
+                    <div class="info-value">K109 Phạm Như Sương</div>
+                </div>
+            </div>
+
+            <!-- Mục tiêu nghề nghiệp -->
+            <div class="content-section">
+                <div class="content-section-title">MỤC TIÊU NGHỀ NGHIỆP</div>
+                <div class="content-text">
+                    Tôi mong muốn được làm việc trong môi trường chuyên nghiệp, năng động để có thể vận dụng những kiến thức đã học và không ngừng phát triển kỹ năng chuyên môn. Mục tiêu của tôi là tích lũy kinh nghiệm, nâng cao năng lực bản thân và đóng góp giá trị cho sự phát triển của công ty.
+                </div>
+            </div>
+
+            <!-- Trình độ học vấn -->
+            <div class="content-section">
+                <div class="content-section-title">TRÌNH ĐỘ HỌC VẤN</div>
+                <div class="info-row">
+                    <div class="info-label">Trường:</div>
+                    <div class="info-value">FPT UNIVERSE</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Chuyên ngành:</div>
+                    <div class="info-value">IT</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Thời gian học:</div>
+                    <div class="info-value">2024 – 2028</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Bằng cấp:</div>
+                    <div class="info-value">Giỏi</div>
+                </div>
+            </div>
+
+            <!-- Kinh nghiệm làm việc -->
+            <div class="content-section">
+                <div class="content-section-title">KINH NGHIỆM LÀM VIỆC</div>
+                <div class="info-row">
+                    <div class="info-label">Kinh nghiệm:</div>
+                    <div class="info-value">Nhận việc, nâng cao kinh nghiệm bản thân trong quá trình học tập</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Thời gian:</div>
+                    <div class="info-value">4 năm</div>
+                </div>
+                <div class="content-section-title" style="margin-top: 15px;">MÔ TẢ CÔNG VIỆC</div>
+                <div class="list-item">Nhận việc nhỏ của các công ty để nâng cao kinh nghiệm</div>
+                <div class="list-item">Mỗi ngày làm 2 bài code thuật toán</div>
+            </div>
+
+            <!-- Kỹ năng -->
+            <div class="content-section">
+                <div class="content-section-title">KỸ NĂNG</div>
+                <div class="list-item">Kỹ năng giao tiếp</div>
+                <div class="list-item">Kỹ năng làm việc nhóm</div>
+                <div class="list-item">Tin học văn phòng (Word, Excel, PowerPoint)</div>
+                <div class="list-item">Kiến thức cơ bản về HTML, CSS, Java</div>
+                <div class="list-item">Khả năng học hỏi nhanh, tinh thần trách nhiệm cao</div>
+            </div>
+
+            <!-- Chứng chỉ / Giải thưởng -->
+            <div class="content-section">
+                <div class="content-section-title">CHỨNG CHỈ / GIẢI THƯỞNG</div>
+                <div class="list-item">Chứng chỉ Coursera FPT UNIVERSE về AI</div>
+                <div class="list-item">Giải nhất cuộc thi AI YOUNG GURU</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
