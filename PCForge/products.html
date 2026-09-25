@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linh kiện - PCForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/products.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">◈</span><span><strong>PCForge</strong><small>Build Your Dream PC</small></span></a>
+  <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+  <nav class="main-nav" id="mainNav"><a href="index.html">Trang chủ</a><a class="active" href="products.html">Linh kiện</a><a href="builder.html">PC Builder</a><a href="products.html?filter=sale">Khuyến mãi</a><a href="contact.html">Liên hệ</a></nav>
+  <div class="header-actions"><div class="search-box"><input id="globalSearch" type="search" placeholder="Tìm kiếm..."><button id="globalSearchBtn">⌕</button></div><a class="cart-btn" href="cart.html">🛒<span id="cartBadge">0</span></a></div>
+</div></header>
+<main class="container page-main">
+  <div class="page-title"><div><span class="section-kicker">COMPONENT STORE</span><h1>Linh kiện PC</h1><p>Chọn linh kiện phù hợp với cấu hình của bạn.</p></div><a class="btn btn-primary" href="builder.html">Build PC →</a></div>
+  <div class="shop-layout">
+    <aside class="filter-panel">
+      <h3>Bộ lọc</h3>
+      <label>Tìm kiếm<input id="productSearch" type="search" placeholder="Tên sản phẩm..."></label>
+      <label>Danh mục<select id="categoryFilter"><option value="all">Tất cả</option></select></label>
+      <label>Thương hiệu<select id="brandFilter"><option value="all">Tất cả</option></select></label>
+      <label>Khoảng giá<select id="priceFilter"><option value="all">Tất cả</option><option value="0-3000000">Dưới 3 triệu</option><option value="3000000-8000000">3–8 triệu</option><option value="8000000-15000000">8–15 triệu</option><option value="15000000-999999999">Trên 15 triệu</option></select></label>
+      <button class="btn btn-secondary full" id="resetFilters">Xóa bộ lọc</button>
+    </aside>
+    <section class="shop-results">
+      <div class="results-toolbar"><strong id="resultCount">0 sản phẩm</strong><select id="sortSelect"><option value="default">Sắp xếp mặc định</option><option value="priceAsc">Giá thấp → cao</option><option value="priceDesc">Giá cao → thấp</option><option value="rating">Đánh giá cao</option><option value="new">Mới nhất</option></select></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </div>
+</main>
+<div id="toast-container"></div>
+<footer class="site-footer"><div class="container footer-bottom">© 2026 PCForge. Demo project cho Assignment JavaScript.</div></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script><script src="js/products.js"></script>
+</body></html>

@@ -1,0 +1,247 @@
+.builder-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 355px;
+    gap: 20px;
+    align-items: start
+}
+
+.component-picker,
+.build-summary {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px
+}
+
+.build-summary {
+    position: sticky;
+    top: 90px
+}
+
+.picker-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 14px;
+    margin-bottom: 8px
+}
+
+.picker-head h2,
+.build-summary h2 {
+    margin: 0;
+    font-size: 18px
+}
+
+.picker-head span {
+    font-size: 10px;
+    color: var(--muted)
+}
+
+.component-group {
+    border-bottom: 1px solid #edf3f8;
+    padding: 14px 0
+}
+
+.component-group:last-child {
+    border-bottom: 0
+}
+
+.component-group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.component-group-head strong {
+    font-size: 12px
+}
+
+.component-group-head span {
+    font-size: 9px;
+    color: var(--muted)
+}
+
+.component-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px
+}
+
+.component-option {
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 9px;
+    padding: 9px;
+    cursor: pointer;
+    transition: .15s
+}
+
+.component-option:hover,
+.component-option.selected {
+    border-color: #68aef8;
+    background: #f5faff
+}
+
+.component-option .option-icon {
+    height: 60px;
+    background: #f7faff;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    font-weight: 800;
+    color: #9ec8ee
+}
+
+.component-option strong {
+    display: block;
+    font-size: 10px;
+    margin-top: 6px
+}
+
+.component-option small {
+    display: block;
+    font-size: 9px;
+    color: var(--muted)
+}
+
+.option-price {
+    color: var(--blue-dark) !important;
+    font-weight: 800 !important;
+    margin-top: 3px
+}
+
+.summary-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #cbd5e1
+}
+
+.status-dot.ok {
+    background: var(--green)
+}
+
+.status-dot.warn {
+    background: var(--yellow)
+}
+
+.selected-item {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    border-bottom: 1px solid #edf3f8;
+    padding: 10px 0
+}
+
+.selected-item .sel-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #f2f7fc;
+    display: grid;
+    place-items: center;
+    color: #77a5cf;
+    font-weight: 800
+}
+
+.selected-item div:nth-child(2) {
+    flex: 1
+}
+
+.selected-item strong {
+    display: block;
+    font-size: 10px
+}
+
+.selected-item small {
+    display: block;
+    color: var(--muted);
+    font-size: 8px
+}
+
+.remove-component {
+    border: 0;
+    background: none;
+    color: #a0aec0
+}
+
+.power-card {
+    margin: 15px 0;
+    background: #edf6ff;
+    border-radius: 9px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.power-card span {
+    font-size: 10px;
+    color: var(--muted)
+}
+
+.power-card strong {
+    font-size: 20px;
+    color: var(--blue-dark)
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    padding: 6px 0
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 12px
+}
+
+.summary-total strong {
+    font-size: 22px;
+    color: var(--blue-dark)
+}
+
+.compatibility-box {
+    border-radius: 8px;
+    padding: 11px;
+    font-size: 10px;
+    margin-bottom: 10px
+}
+
+.compatibility-box.neutral {
+    background: #f3f6fa;
+    color: var(--muted)
+}
+
+.compatibility-box.ok {
+    background: #ecfdf3;
+    color: #137333
+}
+
+.compatibility-box.warn {
+    background: #fff8e8;
+    color: #9a6700
+}
+
+.compatibility-box ul {
+    margin: 5px 0 0;
+    padding-left: 18px
+}
+
+.builder-actions {
+    display: flex;
+    gap: 8px
+}

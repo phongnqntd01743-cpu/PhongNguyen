@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>PC Builder - PCForge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/builder.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">◈</span><span><strong>PCForge</strong><small>Build Your Dream PC</small></span></a><button class="mobile-menu-btn" id="mobileMenuBtn">☰</button><nav class="main-nav" id="mainNav"><a href="index.html">Trang chủ</a><a href="products.html">Linh kiện</a><a class="active" href="builder.html">PC Builder</a><a href="products.html?filter=sale">Khuyến mãi</a><a href="contact.html">Liên hệ</a></nav><div class="header-actions"><a class="cart-btn" href="cart.html">🛒<span id="cartBadge">0</span></a></div></div></header>
+<main class="container page-main">
+  <div class="page-title"><div><span class="section-kicker">PC BUILDER</span><h1>Xây dựng cấu hình của bạn</h1><p>Chọn linh kiện, kiểm tra tương thích và lưu cấu hình bằng LocalStorage.</p></div><div class="builder-actions"><button class="btn btn-secondary" id="saveBuild">Lưu cấu hình</button><button class="btn btn-outline" id="loadBuild">Tải cấu hình</button></div></div>
+  <div class="builder-layout">
+    <section class="component-picker">
+      <div class="picker-head"><h2>Chọn linh kiện</h2><span id="pickerHint">Chọn một sản phẩm cho từng nhóm</span></div>
+      <div id="componentSections"></div>
+    </section>
+    <aside class="build-summary">
+      <div class="summary-head"><div><span class="section-kicker">YOUR BUILD</span><h2>Cấu hình của tôi</h2></div><span class="status-dot" id="buildStatusDot"></span></div>
+      <div id="selectedComponents"></div>
+      <div class="power-card"><span>Công suất ước tính</span><strong id="estimatedPower">0W</strong></div>
+      <div class="summary-line"><span>Số linh kiện</span><strong id="componentCount">0</strong></div>
+      <div class="summary-total"><span>Tổng giá trị</span><strong id="buildTotal">0 ₫</strong></div>
+      <div id="compatibilityBox" class="compatibility-box neutral">Chưa có đủ dữ liệu để kiểm tra.</div>
+      <button class="btn btn-primary full" id="checkCompatibility">Kiểm tra tương thích</button>
+      <button class="btn btn-secondary full" id="addBuildToCart">Thêm cấu hình vào giỏ</button>
+    </aside>
+  </div>
+</main>
+<div id="toast-container"></div><script src="js/data.js"></script><script src="js/app.js"></script><script src="js/builder.js"></script>
+</body></html>
